@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container , .icon , .number , button{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.container{
+    width: 1440px;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+.theBox{
+    width: 380px;
+    height: 390px;
+    border-radius: 25px;
+    background-color:  hsl(213, 19%, 18%);
+    padding: 25px;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background-color:hsl(217deg 12% 30%);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+h1{
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+p{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+
+}
+.numberGroup{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+.number{
+    width: 50px;
+    height: 50px;
+    background-color:hsl(217deg 12% 30%);
+    border-radius: 50%;
+    font-size: 20px;
+    color: hsl(217, 12%, 63%);
+}
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    background-color:  hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+}
