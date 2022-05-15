@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- style -->
   <link rel="stylesheet" href="style.css">
+  <!-- fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
+
 <body>
- <div class="container">
-    <div class="Box1">
-      <div class="icon"><i class="bi bi-star-fill" style="color:  hsl(25, 97%, 53%);"></i></div>
-      <h1>How did we do?</h1>
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <div class="numberGroup">
-        <h1 class="number">1</h1>
-        <h1 class="number">2</h1>
-        <h1 class="number">3</h1>
-        <h1 class="number">4</h1>
-        <h1 class="number">5</h1>
+  <main class="container">
+    <div class="card">
+      <!-- card content one  -->
+      <div class="card-content-1 ">
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="icon Star">
+        </div>
+        <h1 class="title">How did you do</h1>
+        <div class="text">Please let us know how we did with your support request. All feedback is appreciated to help
+          us improve our offering.</div>
+        <div class="rating-wrapper">
+          <div class="rating-btn">
+            <div>1</div>
+          </div>
+          <div class="rating-btn">
+            <div>2</div>
+          </div>
+          <div class="rating-btn">
+            <div>3</div>
+          </div>
+          <div class="rating-btn active">
+            <div>4</div>
+          </div>
+          <div class="rating-btn">
+            <div>5</div>
+          </div>
+        </div>
+        <div class="submit-btn">
+          <div>Submit</div>
+        </div>
       </div>
-      <button type="submit"> SUBMIT </button>
+      <!-- card content two  -->
+      <div class="card-content-2 hide">
+        <img src="./images/illustration-thank-you.svg" alt="thank you">
+        <div class="result"><div> You selected <span class="score">4</span> out of 5</div></div>
+        <h2 class="title">Thank You!</h2>
+        <div class="text">
+          We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </div>
+      </div>
     </div>
-    <div class="Box2">
-      <div class="thank">
-        <img src="./images/illustration-thank-you.svg" alt="">
-      </div>
-      <div class="selection">
-        <h1>You selected 4 out of 5</h1> 
-      </div>
-      <h1 class="thnakYou">Thank you!</h1>
-      <p>
-        We appreciate you taking the time to give a rating.
-        If you ever need more support, don't hesitate to get in touch! 
-      </p>
-    </div>
- </div>
+
+  </main>
+  <script src="script.js"></script>
 </body>
+
 </html>
